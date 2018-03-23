@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<script src="./assets/js/angular.js"></script>
+		<script src="./assets/js/angular-route.js"></script>
+		<script src="./app/js/main.js"></script>
+		
+		<link href="./assets/css/bootstrap.css" rel="stylesheet"></link>
+		<link href="./assets/css/bootstrap-theme.min.css" rel="stylesheet"></link>
+		<link href="./app/css/style.css" rel="stylesheet"></link>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="./#!/">Welcome!</a>
+				</div>
+				<ul class="nav navbar-nav">
+						
+					    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="./#!/edit">Currency
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu" ng-repeat="i in items">
+                        <li><a href="./#!/details/{{i.id}}">BTC</a></li>
+                        <li><a href="./#!/details/{{i.id}}">ETH</a></li>
+                        <li><a href="./#!/details/{{i.id}}">XRP</a></li>
+					    </ul>
+					</li>
+					<li><a href="./#!/app/html/edit">Criptocurrency <span class="glyphicon glyphicon-bitcoin"><span></li>
+					<li><a href="./#!/details/:itemId">Details <span class="glyphicon glyphicon-bitcoin"></span></a></li>
+					</ul>
+			</div>
+		</nav>
+		
+		<div ng-app="Cripto" class="container">
+			<div ng-view>
+
+			</div>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="./assets/js/bootstrap.js"></script>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<div ng-controller="editCtrl">
+
+<div class="row">
+		<div class="col-lg-6 col-md-7 col-sm-8 col-xs-12">
+			<table class="table table-bordered table-striped" border="1">
+				<thead>
+					<tr>
+						<th>Rank</th>
+						<th>Symbol</th>
+						<th>Price</th>
+						<th>24h-change</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="i in items">
+						<td>{{i.rank}}</td>
+						<td><a href= "./#!/details/{{i.id}}">{{i.symbol}}</a></td>
+						<td>{{i.price}}</td>
+						<td>{{i.daychange}}</td>
+						
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

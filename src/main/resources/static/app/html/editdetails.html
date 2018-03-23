@@ -1,0 +1,46 @@
+<div ng-controller="editdetailsCtrl">
+
+
+	            <table class="table table-bordered table-striped" border="1">
+	            <tr>
+				<td>Name:</td><td>{{detail.name}}</td></tr>
+				<tr>
+				<td>Symbol:</td><td>{{detail.symbol}}</td></tr>
+				<tr>
+				<td>Rank:</td>
+				<td>{{detail.rank}}</td></tr>
+				<tr>
+				<td>Price in USD:</td>
+				<td>{{detail.priceInUsd}}</td></tr>
+				<tr>
+				<td>Price in bitcoin:</td>
+				<td>{{detail.priceInbitcoin}}</td></tr>
+				<tr>
+				<td>Day volume:</td>
+				<td>{{detail.dayvolume}}</td></tr>
+				<tr>
+				<td>Market cup:</td>
+				<td>{{detail.marketcup}}</td></tr>
+				<tr>
+				<td>Available supply:</td>
+				<td>{{detail.availableSupply}}</td></tr>
+				<tr>
+				<td>Total supply:</td>
+				<td>{{detail.totalSupply}}</td></tr>
+				<tr>
+				<td>One hour change:</td>
+				<td>{{detail.oneHchange}}</td></tr>
+				<tr>
+				<td>24h change:</td>
+				<td>{{detail.daychange}}</td></tr>
+				<tr>
+				<td>7 day change:</td>
+				<td>{{detail.sevenDchange}}</td></tr>
+				</table></br></br>
+				<button class="btn btn-primary" ng-click="getDetails()">Refresh</button>
+				
+
+	
+	
+
+</div>

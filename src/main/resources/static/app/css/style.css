@@ -1,0 +1,7 @@
+.table-striped>tbody>tr:nth-of-type(odd) {
+	background-color: graylight;
+}
+
+.Label {
+	width: 120px;
+}
